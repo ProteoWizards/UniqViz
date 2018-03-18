@@ -1,0 +1,24 @@
+{
+  "name": "biohack-app",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "API_BASE_URL=http://localhost:4000 webpack-serve --host 0.0.0.0",
+    "start-julian": "API_BASE_URL=http://167.114.148.229:4000 webpack-serve --host 0.0.0.0"
+  },
+  "author": "ProteoWizards",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.1",
+    "envalid": "^4.1.4",
+    "html-webpack-plugin": "^3.0.6",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-serve": "^0.2.0"
+  },
+  "dependencies": {
+    "jstat": "^1.7.1"
+  }
+}

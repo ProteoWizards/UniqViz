@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="eleven column" style="margin-top: 5%">
+        <h4>Human Genome Uniqueness</h4>
+      </div>
+	  <div class="container" style="width:1200px;">
+
+		  <div class="row">
+			<div class="nine columns" style="background-color:#DDDDDD; border-radius:5px;">
+				<canvas id="canvas" width=700 height=700 style="display:block; margin:5%; background-color:#FFFFFF; "></canvas>
+				<input type="range" min="1" max="900" value="500" class="slider" id="myRange">
+			</div>
+			<div class="three columns">
+				<select id="goselect">
+				  <option value="molecular-function">Gene ontology (molecular function)</option>
+				  <option value="cellular-component">Gene ontology (cellular component)</option>
+				  <option value="biological-function">Gene ontology (biological process)</option>
+				</select>
+
+
+				<select id="abc">
+				  <option value="molecular-function">a</option>
+				  <option value="cellular-component">b</option>
+				  <option value="biological-function">c</option>
+				  <option value="molecular-function">d</option>
+				  <option value="cellular-component">e</option>
+				  <option value="biological-function">f</option>
+				  <option value="molecular-function">g</option>
+				  <option value="cellular-component">h</option>
+				  <option value="biological-function">i</option>
+				  <option value="molecular-function">j</option>
+				  <option value="cellular-component">k</option>
+				  <option value="biological-function">l</option>
+				  <option value="molecular-function">m</option>
+				  <option value="cellular-component">n</option>
+				  <option value="biological-function">o</option>
+				</select>
+				</br>
+				<button>SVG</button><button>CSV</button>
+			</div>
+		  </div>
+
+		</div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
